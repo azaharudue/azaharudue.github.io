@@ -1,0 +1,51 @@
+:host {
+  color: var(--white);
+  display: block;
+  padding: 4rem 2rem 6rem;
+  background-color: var(--dark-gray);
+  clip-path: polygon(0 0, 100% 0%, 100% 95%, 50% 100%, 0 95%);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.title {
+  grid-row: 1;
+  padding: 0 0 2rem;
+  text-align: center;
+  // Salutation
+  :nth-child(1) {
+    font-size: 3rem;
+  }
+  //Greeting part 2
+  :nth-child(2) {
+    font-size: 2rem;
+  }
+  color: var(--white);
+  font-family: "Roboto Condensed", sans-serif;
+}
+/** */
+.subtitle {
+  grid-row: 3/4;
+  padding: 2rem;
+  font-size: 1rem;
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .job {
+    padding: 0 0 1rem;
+    font-size: 1.25rem;
+
+    color: var(--light-green);
+  }
+  .job-clip {
+    background-color: var(--dark-blue);
+    clip-path: inset(0 50% 50% 20% 100% 80% 50% 90%);
+  }
+  outline: 2px solid var(--white);
+}
+
+/*    */
